@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paytem page</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: aliceblue;
+        }
+        .container{
+            display: flex;
+            max-width: 1000px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+        }
+        .left{
+            flex:1;
+            padding: 20px;
+        }
+        .pic{
+            width=150px;
+        }
+        h1{
+            font-size: 24px;
+            margin: 20px,0;
+        }
+        p{
+            color: black;
+        }
+        .download-card img{
+            width: 150px;
+            margin:10px 5px;
+             
+        }
+        .right{
+            flex:1;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            border-radius: .5rem;
+            margin-bottom: 2px;
+           
+        }
+        .sub{
+            flex: 1;
+            display: inline-block;
+            flex-wrap: wrap;
+            height: 50%;
+            background-color: rgb(217, 255, 234);
+            margin: 1;
+            padding: 0;
+            border-radius: .5rem;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+            
+        }
+        h3{
+            font-size: 30px;
+            color: black;
+        }
+        .sucess{
+            font-weight: bold;
+
+        }
+        .pay_card{
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        button{
+            background-color: rgb(88, 150, 244);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .avatars{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .avatar{
+            width: 60px;
+            height: 60px;
+            background-color: chartreuse;
+            border-radius: 50%;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="paytm_logo.png" alt="paytm logo" class="pic"/>
+            <h1>Pay anyone directly from your bank account.</h1>
+            <p>Pay anyone,everywhere ,Make contactless & secure payments in-stores or online using Paytm UPI or Directly from your Bank Accout .Plus,send & receive money from anywhere. </p>
+            <div class="download-card">
+             <img src=""alt="download option"/>
+             <img src=""alt="download option"/>
+            </div>
+        </div>
+        <div class="right">
+            <div class="pay_card">
+                <div class="sub">
+                    <h3>Rs.250</h3>
+                    <h1>paid successfully</h1>
+                </div>
+                <p class="success">To Ajay Gupta</p>
+                <p>03 Feb, 10.10 AM</p>
+                <p>UPI Ref No:3657542564</p>
+                <button> Send Money to Contacts</button>
+
+            </div>
+            <div class="avatars">
+                <div class="avatar"></div>
+                <div class="avatar"></div>
+                <div class="avatar"> </div>
+                <div class="avatar"></div>
+                <div class="avatar"></div>
+                <div class="avatar"></div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
