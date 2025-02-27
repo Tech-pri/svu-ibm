@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie Collection</title>
     <style>
-        .thumbnail {
+        table {
             width: 100%;
-            height: 150px;
-            overflow: hidden;
-            border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img.thumbnail {
+            width: 50px;
+            height: auto;
+        }
+        .no-movies {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div>
-        <table border="1">
+    <input type="text" id="searchBar" placeholder="Search by name or genre..." onkeyup="filterMovies()">
+    <button onclick="goHome()">Back to Home</button>
+    <table id="movieTable">
+        <thead>
             <tr>
-                <td> Movie Name</td>
-                <td> Description </td>
-                <td> Release Year</td>
-                <td> IMDb Rating</td>
-                <td> Genre</td>
-                <br>
-                
+                <th>Movie Name</th>
+                <th>Description</th>
+                <th>Release Year</th>
+                <th>IMDb Rating</th>
+                <th>Genre</th>
+                <th>Poster</th>
+                <th>Delete</th>
             </tr>
-       </table><br>
-    <div class=" thumbnail">
-        <img src="image2.png"/>
-    </div>
-    <button>
-        delete
-    </button>
-    </div>
+        </thead>
+        <tbody id="movieList">
+            <!-- Movie rows will be populated here -->
+        </tbody>
+    </table>
+    <div class="no-movies" id="noMoviesMessage">No movies added yet!</div>
+    <script src="movies.js"></script>
 </body>
 </html>
