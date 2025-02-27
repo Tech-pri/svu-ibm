@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movie Management System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(157, 221, 239);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+
+        #form {
+            height: 400px;
+            width: 500px;
+            border: 1px solid black;
+            /* Fixed border definition */
+            background: linear-gradient(to right, skyblue, white);
+            box-shadow: 10px 10px 5px rgb(23, 20, 20);
+            flex-wrap: wrap;
+            border-radius: 1rem;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            /* Fixed color property */
+        }
+
+        .submit {
+            background: rgb(24, 20, 20);
+            box-shadow: 5px 5px 5px rgb(224, 220, 220);
+            color: aliceblue;
+        }
+    </style>
+
+<body>
+    <div id="form">
+        <form class="actual">
+            <table>
+                <h1 class="heading1"> Movie Management System</h1>
+                <lable for=" Movie name ">Movie name <input type="text" name="movie name"></lable><br>
+
+                <tr>
+                <tr>
+                    <td>
+                        <lable for="Movie Description:"> Movie Description<br><textarea name="movie Description"
+                                rows="8" cols="50"></textarea> </lable><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for=" Release year"> Release Year <input type="number" name="number" min="1600"
+                                max="2025"></label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Rating"> IMDb Rating <input type="number" name="rating" min="0"
+                                max="10"></label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <select class="movietype" typee="Movie type">
+                            <option value="Action">Action</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Sci-Fi">Sci-Fi</option>
+                            <option value="Horror">Horror</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable for=" Movie name ">Movie name <img src="#" /></lable><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" class="submit" name=Submit value="Submit" />
+                    </td>
+                </tr>
+
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+
+</html>
